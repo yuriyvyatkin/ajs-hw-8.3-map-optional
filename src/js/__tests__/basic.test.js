@@ -19,6 +19,7 @@ test('object "user" of class "Settings" allows you to set available settings', (
   settings.user.set('theme', 'light');
   settings.user.set('unkown key', 'pop');
   settings.user.set('difficulty', 'unkown value');
+
   expect(settings.user.get('theme')).toBe('light');
   expect(settings.user.get('unkown key')).not.toBeDefined();
   expect(settings.user.get('difficulty')).not.toBeDefined();
